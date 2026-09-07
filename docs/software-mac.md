@@ -1,6 +1,6 @@
 # CS 431 (Fall 2026): Software Setup for Mac
 
-This page provides instructions on setting up the compute environment necessary for CS 431 (Fall 2026) for the Mac.
+This page provides instructions on setting up the compute environment for CS 431 (Fall 2026) on a Mac.
 
 ## Preliminaries
 

@@ -1,6 +1,6 @@
 # CS 431 (Fall 2026): Software Setup for Linux
 
-This page provides instructions on setting up the compute environment necessary for CS 431 (Fall 2026) for the Student Linux Environment.
+This page provides instructions on setting up the compute environment for CS 431 (Fall 2026) in the Student Linux Environment.
 
 ## Preliminaries
 
@@ -223,6 +223,6 @@ ssh -N -L 8811:localhost:8888 jimmylin@129.97.167.157
 You can change the local port 8811 to suit your needs; use the IP from above.
 Obviously, change your username.
 
-After you set up the tunnel, you should be able to navigate to `http://localhost:8811/` in the browser on your machine to access Jupyter Notebook.
+After you set up the tunnel, you should be able to navigate to `http://localhost:8811/` in the browser on your (local) machine to access Jupyter Notebook.
 When you log in the first time, it'll ask for a token.
 Check the shell running Jupyter Notebook for the token.
