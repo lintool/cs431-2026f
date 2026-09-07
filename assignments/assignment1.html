@@ -72,6 +72,112 @@ Anything (questions, grading scheme, etc.) might arbitrarily change before the o
 <b><i>Therefore, start this assignment before its official release at your own risk.</i></b>
 After the release, the assignment can be considered "final" and will only be updated with clarifications, bug fixes, etc.</p>
 
+<h4 style="padding-top: 10px">Assignment Mechanics</h4>
+
+<p>High-level overview: We will be using GitHub for the assignments.
+You will create a <b><i>private</i></b> GitHub repo that you will populate throughout the semester for each assignment, successively.
+You will share your GitHub repo with a service account used for the course.
+Using this service account, we will pull your repo for grading after the deadline.</p>
+
+<p>‼️ Do <b>not</b> wait until the last minute to go through these steps, as there is a blocker that requires attention from the course staff.</p>
+
+<p>Please follow these instructions exactly:</p>
+
+<p>You need a GitHub account.
+You can use whatever GitHub account you want &mdash; equally okay to use your personal account or a course-specific account.</p>
+
+<p>Create a <b><i>private</i></b> GitHub repo, named <code>cs431-2026f-assignments-USERID</code>.
+Replace <code>USERID</code> with your actual GitHub userid (note, <i>not</i> your UWaterloo directory id).
+So, for me, since my GitHub userid is <code>lintool</code>, I'd create the repo <code>cs431-2026f-assignments-lintool</code>.</p>
+
+<p>Make sure your repo is private.
+Otherwise, everyone in the world can see your assignment solutions.
+Share your repo with the course service account <code>xxxx</code> (TBD).
+That is, add the user as a collaborator.
+This will give the course staff access to your repo.</p>
+
+<p>Make sure your repo actually exists.
+Create a stub <code>README.md</code> at the root of your repo to make sure (content doesn't matter).</p>
+
+<p>As a one-time action, we will need to explicitly link your GitHub account to your UWaterloo directory id.
+That is, we need to know that it is <i>you</i> submitting the assignment.
+We just need to verify this association for A1.</p>
+
+<p>On Piazza, send the instructors a private message, as follows:</p>
+
+<p style="padding-left: 25px;">
+<b>Subject:</b> <code>UWATERLOO_USERID</code>: GitHub account <code>GITHUB_USERID</code><br/>
+I am <code>YOUR NAME</code> <code>UWATERLOO_USERID</code> and I certify that my GitHub userid is <code>GITHUB_USERID</code>.</p>
+
+<p>Bind the variables as appropriate.
+So, for example:</p>
+
+<p style="padding-left: 25px;">
+<b>Subject:</b> jimmylin: GitHub account lintool<br/>
+I am Jimmy Lin jimmylin and I certify that my GitHub userid is lintool.</p>
+
+<p>With this message, you are explicitly confirming your identity and the association between you and your GitHub account.
+Wait for confirmation from the course staff.
+We need to make sure we can access your repo.</p>
+
+<p>In your repo, A1 files will go in <code>assignment1/</code>, A2 in <code>assignment2/</code>, etc.
+You will be using the <i>same repo</i> throughout the semester.
+Details of what files to submit will be provided in each assignment.</p>
+
+<p>To confirm that everything is in order, check that you can make changes to your own repo.
+(For example, clone locally, make a small edit, and then push back to origin.)</p>
+
+<p>If you've gotten here, you're done with the "mechanics"... Congrats! 🎉</p>
+
+<h4 style="padding-top: 10px">Let's <i>Actually</i> Get Started</h4>
+
+<p>The notebook that contains the actual assignment is <a href="https://github.com/lintool/cs431-2026f/blob/main/assignments/assignment1.ipynb">here</a>.
+
+<p>Before you start the assignment, make sure you've already installed the software needed for the course: instructions are provided <a href="../software.html">here</a>.
+You'll be ready to start the assignment once you are able to launch JupyterLab and view the assignment notebook in a browser.</p>
+
+<h4 style="padding-top: 10px">Assignment Submission Details</h4>
+
+<p>Here's what you'll turn in.
+In your assignment repo, you should have a sub-directory called <code>assignment1/</code>.
+In that directory, you should have the following files:
+</p>
+
+<ul>
+
+<li><code>assignment1.ipynb</code>: A copy of the assignment notebook, but with code/answers/etc. filled in.</li>
+<li><code>rdd_top10_stopwords_retained.csv</code>: CSV of top-10 most frequently occurring words, with stopwords retained, using RDDs.</li>
+<li><code>rdd_top10_stopwords_removed.csv</code>: CSV of top-10 most frequently occurring words, with stopwords removed, using RDDs.</li>
+<li><code>df_top10_stopwords_retained.csv</code>: CSV of top-10 most frequently occurring words, with stopwords retained, using DataFrames.</li>
+<li><code>df_top10_stopwords_removed.csv</code>: CSV of top-10 most frequently occurring words, with stopwords removed, using DataFrames.</li>
+<li><code>sql_top10_stopwords_retained.csv</code>: CSV of top-10 most frequently occurring words, with stopwords retained, using SQL.</li>
+<li><code>ingest_reviews.py</code>: The data ingestion script.</li>
+<li><code>README.md</code>: A Markdown file you can use to explain anything that wasn't explicitly requested. Even if you have nothing to say, create an empty stub.</li>
+
+</ul>
+
+<h4 style="padding-top: 10px">Grading Scheme</h4>
+
+<ul>
+
+  <li>Word count code using RDDs: 6 points</li>
+  <li>Word count code using DataFrames: 6 points</li>
+  <li>Word count code using SQL: 8 points</li>
+  <li>Question in <code>acell_13_3hq81</code> about tokens: 3</li>
+  <li>Question in <code>acell_14_3ng52</code> about RDDs vs. DataFrames: 3</li>
+  <li>Question in <code>acell_15_3er9s</code> about RDDs vs. SQL: 3</li>
+  <li>Question in <code>acell_16_1vb6x</code> about the two bugs: 1</li>
+  <li>Following instructions: 2 points</li>
+
+</ul>
+
+<p>What does "following instructions" mean? These are "free points" if you follow the instructions provided in this assignment.
+These points are to handle the scenario where all your answers are correct, but you <i>did not</i> follow the instructions and that caused us to go out of our way to fix your submission so that it conforms to the instructions.
+(For example, you removed the ids that we used for tracking, which would make it much more difficult to grade.)
+In these and other related cases, we will dock points from this category.</p>
+
+<p><b>Total:</b> 32 points</p>
+
 <div style="padding-bottom: 100px"></div>
 
     </div><!-- /.container -->
